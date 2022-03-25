@@ -1,0 +1,117 @@
+body {
+    background-color: rgb(37, 37, 37);
+}
+
+header {
+    margin:3% auto;
+    text-align: center;
+    color: rgba(232, 102, 236, 1);
+}
+
+header p{
+    color: white;
+    margin: 3% 10% 5% 10%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns:
+    repeat(6, 1fr);
+}
+.linear-gradient-background {
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%
+        rgba(232, 102, 236, 0.6) 100%
+        );
+}
+
+.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.code-card:hover, 
+.code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px
+    rgba(232, 102, 236, 1), 0 0 15px
+    rgba(232, 102, 236, 1);
+}
+
+.card-header {
+    position: relative;
+    margin-top: -20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    z-index: 1;
+    background-color: rgb(37, 37, 37);
+}
+
+h1{
+    font-size: 300%;
+}
+
+pre {
+    color: white;
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%,
+        rgba(232, 102, 236, 0.6) 100%
+        );
+        border-radius: 5px;
+        margin: 2% 2%;
+        text-align: left;
+        user-select: all;
+        line-height: 1.5;
+        word-wrap: break-word;
+}
+
+main h2 {
+    border: 2px white solid;
+    border-radius: 4px;
+    font-size: 175%;
+    padding-left: 3%;
+}
+
+section {
+    margin: 0 auto 3% auto;
+    width: 30%;
+    border: 3px white dashed;
+}
+footer {
+    text-align: center;
+}
+
+section p {
+    margin: 0 2%;
+    ;
+}
+
+h2, section>p{
+    color: rgba(232, 102, 236, 1);
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+    section {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 768px) {
+    section {
+        width: 90%;
+    }
+}
+
+
