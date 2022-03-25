@@ -73,6 +73,7 @@ pre {
         user-select: all;
         line-height: 1.5;
         word-wrap: break-word;
+        flex-grow:1;
 }
 
 main h2 {
